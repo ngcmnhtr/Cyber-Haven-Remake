@@ -42,7 +42,7 @@ Set in the high-tech yet crumbling city of Control City, *Cyber Haven* is a 2D p
 ## **Setup**
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/ngcmnhtr/cyber-haven-remake.git](https://github.com/ngcmnhtr/Cyber-Haven-Remake.git)
+   git clone https://github.com/ngcmnhtr/cyber-haven-remake.git
 2. Open the project in the Greenfoot IDE.
 3. Run and enjoy!
 ---
