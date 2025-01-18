@@ -56,3 +56,4 @@ Set in the high-tech yet crumbling city of Control City, *Cyber Haven* is a 2D p
 ## **Credits**
 - James Floyd, Nguyen Ngoc Minh Trieu, Maro Shantelle, Sanjurjo, Kyra Bryanna Durrant
 - **Music**: ri0genmusic on YouTube
+- This is [the original repository](https://github.com/adinashby-vanier-college/game-prog-1-project-FloatySMG) with our Game Programming 1 teacher. This is a school project for the Game Programming 1 course with my team mate!
