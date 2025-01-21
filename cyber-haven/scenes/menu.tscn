@@ -1,13 +1,12 @@
-[gd_scene load_steps=9 format=3 uid="uid://e7wc5marfyec"]
+[gd_scene load_steps=8 format=3 uid="uid://e7wc5marfyec"]
 
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_12qxk"]
-[ext_resource type="Texture2D" uid="uid://cb40ivfv1whvr" path="res://images/BackgroundMainMenu.png" id="2_dq7oe"]
+[ext_resource type="Texture2D" uid="uid://cb40ivfv1whvr" path="res://images/backgrounds/BackgroundMainMenu.png" id="2_m1n60"]
 [ext_resource type="Texture2D" uid="uid://d18ctvuoyf2jn" path="res://images/button/StartButton.png" id="2_u0oq1"]
 [ext_resource type="Texture2D" uid="uid://bpveeg1ladayx" path="res://images/button/StartHoverButton.png" id="3_uli06"]
 [ext_resource type="Texture2D" uid="uid://bcr8eud3824ov" path="res://images/button/TutorialButton.png" id="4_6tda7"]
 [ext_resource type="Texture2D" uid="uid://cht0fee1kj8gk" path="res://images/button/TutorialHoverButton.png" id="5_v84mc"]
-[ext_resource type="Texture2D" uid="uid://chfnchr628lw5" path="res://images/button/ExitButton.png" id="6_mvhsl"]
-[ext_resource type="Texture2D" uid="uid://f2g11rut2f1x" path="res://images/button/ExitHoverButton.png" id="7_vit6d"]
+[ext_resource type="Texture2D" uid="uid://mpjui546oqnh" path="res://images/button/CyberHavenTitle.png" id="7_bi8ki"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -19,39 +18,32 @@ script = ExtResource("1_12qxk")
 [node name="BackgroundMainMenu" type="Sprite2D" parent="."]
 position = Vector2(-7, -1.50001)
 scale = Vector2(1, 1.08167)
-texture = ExtResource("2_dq7oe")
+texture = ExtResource("2_m1n60")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="."]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -212.5
-offset_top = -96.0
-offset_right = 212.5
-offset_bottom = 96.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="Start Button" type="TextureButton" parent="VBoxContainer"]
+[node name="Start Button" type="TextureButton" parent="."]
 layout_mode = 2
+offset_left = -165.0
+offset_top = 8.0
+offset_right = 152.0
+offset_bottom = 74.0
 texture_normal = ExtResource("2_u0oq1")
 texture_hover = ExtResource("3_uli06")
 
-[node name="Tutorial Button" type="TextureButton" parent="VBoxContainer"]
+[node name="Tutorial Button" type="TextureButton" parent="."]
 layout_mode = 2
+offset_left = -178.0
+offset_top = 110.0
+offset_right = 183.0
+offset_bottom = 162.0
 texture_normal = ExtResource("4_6tda7")
 texture_hover = ExtResource("5_v84mc")
 
-[node name="Exit Button" type="TextureButton" parent="VBoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("6_mvhsl")
-texture_hover = ExtResource("7_vit6d")
-
 [node name="Camera2D" type="Camera2D" parent="."]
 
-[connection signal="pressed" from="VBoxContainer/Start Button" to="." method="_on_start_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Tutorial Button" to="." method="_on_tutorial_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/Exit Button" to="." method="_on_exit_button_pressed"]
+[node name="CyberHavenTitle" type="Sprite2D" parent="."]
+position = Vector2(-2, -171)
+scale = Vector2(0.669525, 0.72546)
+texture = ExtResource("7_bi8ki")
+
+[connection signal="pressed" from="Start Button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Tutorial Button" to="." method="_on_tutorial_button_pressed"]
